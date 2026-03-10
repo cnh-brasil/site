@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia CNH do Zero – Tire Sua Habilitação Passo a Passo</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--yellow:#FFD600;--black:#0A0A0A;--dark:#111111;--dark2:#1A1A1A;--dark3:#222222;--dark4:#2a2a2a;--white:#FFFFFF;--gray:#888888;--gray-light:#CCCCCC;--green:#00C853;--red:#FF3333;--orange:#FF6D00;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;font-size:17px;line-height:1.65;overflow-x:hidden;}
+.bar{background:var(--yellow);color:var(--black);text-align:center;padding:10px 16px;font-weight:800;font-size:14px;letter-spacing:.04em;text-transform:uppercase;}
+.bar span{margin:0 6px;}
+.hero{background:var(--dark);position:relative;overflow:hidden;padding:60px 24px 80px;text-align:center;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(255,214,0,.18) 0%,transparent 70%),repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,.025) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,.025) 40px);pointer-events:none;}
+.hero-badge{display:inline-block;background:var(--yellow);color:var(--black);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:6px 16px;border-radius:2px;margin-bottom:24px;animation:fadeDown .6s ease both;}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(36px,8vw,72px);line-height:1.05;text-transform:uppercase;max-width:880px;margin:0 auto 24px;animation:fadeDown .7s .1s ease both;}
+.hero h1 em{font-style:normal;color:var(--yellow);}
+.hero-sub{font-size:clamp(15px,2.5vw,19px);color:var(--gray-light);max-width:600px;margin:0 auto 40px;animation:fadeDown .7s .2s ease both;}
+.hero-sub strong{color:var(--white);}
+.hero-note{margin-top:16px;font-size:13px;color:var(--gray);animation:fadeDown .7s .4s ease both;}
+.hero-note span{color:var(--green);font-weight:700;}
+.hero-mockup{margin-top:52px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap;animation:fadeUp .8s .5s ease both;}
+.ebook-cover{display:inline-block;background:linear-gradient(135deg,#1c1c1c,#2a2a2a);border:2px solid rgba(255,214,0,.3);border-radius:8px;padding:28px 32px;max-width:260px;width:100%;box-shadow:0 40px 80px rgba(0,0,0,.6),0 0 60px rgba(255,214,0,.12);transform:perspective(800px) rotateY(-8deg);transition:transform .4s;}
+.ebook-cover:hover{transform:perspective(800px) rotateY(0deg);}
+.ebook-cover.orange{border-color:rgba(255,109,0,.5);box-shadow:0 40px 80px rgba(0,0,0,.6),0 0 60px rgba(255,109,0,.15);}
+.ec-top{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--yellow);font-weight:700;margin-bottom:10px;}
+.ec-top.org{color:var(--orange);}
+.ec-icon{font-size:40px;margin-bottom:8px;}
+.ec-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:24px;text-transform:uppercase;line-height:1.1;margin-bottom:6px;}
+.ec-title em{color:var(--yellow);font-style:normal;}
+.ec-sub{font-size:12px;color:var(--gray-light);line-height:1.4;margin-bottom:14px;}
+.ec-road{height:4px;background:linear-gradient(90deg,var(--yellow),#ff6d00);border-radius:2px;margin-bottom:12px;}
+.ec-old{font-size:12px;color:var(--gray);text-decoration:line-through;}
+.ec-price{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;color:var(--yellow);}
+.ec-price.org{color:var(--orange);}
+.cta-btn{display:inline-block;background:var(--yellow);color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(18px,3.5vw,24px);letter-spacing:.03em;text-transform:uppercase;text-decoration:none;padding:18px 44px;border-radius:4px;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;box-shadow:0 6px 32px rgba(255,214,0,.35);position:relative;overflow:hidden;animation:fadeDown .7s .3s ease both;}
+.cta-btn::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);transition:left .4s;}
+.cta-btn:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(255,214,0,.5);}
+.cta-btn:hover::after{left:150%;}
+.cta-btn.org-btn{background:var(--orange);box-shadow:0 6px 32px rgba(255,109,0,.35);}
+.cta-btn.org-btn:hover{box-shadow:0 12px 40px rgba(255,109,0,.5);}
+section{padding:72px 24px;}
+.container{max-width:780px;margin:0 auto;}
+.container-wide{max-width:1060px;margin:0 auto;}
+.section-label{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);margin-bottom:12px;}
+h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(28px,5vw,46px);text-transform:uppercase;line-height:1.1;margin-bottom:20px;}
+h2 em{font-style:normal;color:var(--yellow);}
+p{margin-bottom:16px;color:var(--gray-light);}
+p strong{color:var(--white);}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,214,0,.2),transparent);}
+.pain{background:var(--dark2);}
+.pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:40px;}
+.pain-card{background:var(--dark3);border:1px solid rgba(255,255,255,.07);border-left:3px solid var(--red);border-radius:6px;padding:22px 18px;}
+.pain-card-icon{font-size:26px;margin-bottom:10px;}
+.pain-card h3{font-family:'Barlow',sans-serif;font-weight:800;font-size:15px;color:var(--white);margin-bottom:6px;}
+.pain-card p{font-size:13px;color:var(--gray);margin:0;}
+.solution{background:var(--black);}
+.solution-inner{background:linear-gradient(135deg,#141414,#1e1e1e);border:1px solid rgba(255,214,0,.2);border-radius:12px;padding:46px 38px;position:relative;overflow:hidden;}
+.solution-inner::before{content:'';position:absolute;top:-60px;right:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(255,214,0,.12),transparent 70%);pointer-events:none;}
+.tabs{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap;}
+.tab-btn{background:var(--dark3);border:2px solid rgba(255,255,255,.1);color:var(--gray-light);font-family:'Barlow',sans-serif;font-weight:700;font-size:13px;padding:10px 20px;border-radius:4px;cursor:pointer;transition:all .2s;}
+.tab-btn.active{background:var(--yellow);border-color:var(--yellow);color:var(--black);}
+.tab-panel{display:none;}
+.tab-panel.active{display:block;}
+.learn{background:var(--dark2);}
+.chapters-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:10px;}
+.chapter-item{display:flex;align-items:flex-start;gap:12px;background:var(--dark4);border:1px solid rgba(255,255,255,.06);border-radius:6px;padding:13px 15px;transition:border-color .2s;}
+.chapter-item:hover{border-color:rgba(255,214,0,.25);}
+.chapter-item.org:hover{border-color:rgba(255,109,0,.3);}
+.ch-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:rgba(255,214,0,.3);line-height:1;min-width:28px;padding-top:1px;}
+.ch-num.org{color:rgba(255,109,0,.35);}
+.ch-text strong{display:block;font-size:14px;color:var(--white);margin-bottom:2px;}
+.ch-text span{font-size:12px;color:var(--gray);}
+.part-label{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--yellow);border-left:3px solid var(--yellow);padding:5px 12px;background:rgba(255,214,0,.06);border-radius:0 4px 4px 0;margin:18px 0 10px;display:inline-block;}
+.part-label.org{border-color:var(--orange);color:var(--orange);background:rgba(255,109,0,.06);}
+.bonus{background:var(--black);}
+.bonus-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:32px;}
+.bonus-card{background:linear-gradient(135deg,#1a1a1a,#1f1f1f);border:1px solid rgba(255,109,0,.25);border-radius:10px;padding:26px 20px;position:relative;overflow:hidden;}
+.bonus-card::before{content:'BÔNUS';position:absolute;top:14px;right:-22px;background:var(--orange);color:var(--white);font-weight:900;font-size:10px;letter-spacing:.1em;padding:4px 28px;transform:rotate(45deg);}
+.bonus-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:32px;color:rgba(255,109,0,.25);line-height:1;margin-bottom:6px;}
+.bonus-icon{font-size:30px;margin-bottom:8px;}
+.bonus-card h3{font-size:15px;font-weight:800;color:var(--white);margin-bottom:6px;}
+.bonus-card p{font-size:13px;color:var(--gray);margin:0;}
+.bonus-value{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;color:var(--orange);background:rgba(255,109,0,.1);padding:3px 10px;border-radius:2px;}
+.for-who{background:var(--dark2);}
+.for-who-list{list-style:none;margin-top:28px;display:flex;flex-direction:column;gap:12px;}
+.for-who-list li{display:flex;align-items:center;gap:14px;font-size:16px;color:var(--white);font-weight:600;}
+.for-who-list li::before{content:'✓';display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:var(--green);color:var(--black);font-weight:900;font-size:13px;border-radius:50%;flex-shrink:0;}
+.benefits{background:var(--dark);}
+.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:36px;}
+.benefit-card{background:var(--dark3);border-radius:10px;padding:26px 20px;border:1px solid rgba(255,255,255,.06);text-align:center;transition:transform .2s,border-color .2s;}
+.benefit-card:hover{transform:translateY(-4px);border-color:rgba(255,214,0,.25);}
+.benefit-emoji{font-size:34px;margin-bottom:12px;}
+.benefit-card h3{font-size:15px;font-weight:800;color:var(--white);margin-bottom:6px;}
+.benefit-card p{font-size:13px;color:var(--gray);margin:0;}
+
+/* CAR EXPLORER */
+.car-explorer{background:var(--dark2);}
+.brand-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
+.brand-pill{background:var(--dark4);border:2px solid rgba(255,255,255,.1);color:var(--gray-light);font-weight:700;font-size:13px;padding:8px 18px;border-radius:24px;cursor:pointer;transition:all .2s;}
+.brand-pill.active{background:var(--yellow);border-color:var(--yellow);color:var(--black);}
+.brand-pill:hover:not(.active){border-color:rgba(255,214,0,.35);color:var(--white);}
+.cars-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;}
+.car-card{background:var(--dark3);border:1px solid rgba(255,255,255,.07);border-radius:10px;overflow:hidden;cursor:pointer;transition:transform .2s,border-color .2s;}
+.car-card:hover{transform:translateY(-3px);border-color:rgba(255,214,0,.3);}
+.car-card.selected{border-color:var(--yellow);box-shadow:0 0 0 1px rgba(255,214,0,.3);}
+.car-card-header{padding:18px 16px 0;position:relative;}
+.car-emoji{font-size:36px;margin-bottom:6px;}
+.car-brand-tag{position:absolute;top:12px;right:12px;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:2px;background:rgba(255,214,0,.12);color:var(--yellow);}
+.car-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:20px;color:var(--white);text-transform:uppercase;}
+.car-full-name{font-size:11px;color:var(--gray);margin-bottom:10px;}
+.car-stats{padding:0 16px 14px;display:grid;grid-template-columns:1fr 1fr;gap:5px;}
+.car-stat{background:var(--dark4);border-radius:4px;padding:5px 8px;}
+.car-stat-label{font-size:9px;color:var(--gray);text-transform:uppercase;letter-spacing:.06em;margin-bottom:1px;}
+.car-stat-val{font-size:12px;font-weight:700;color:var(--white);}
+.car-stat-val.green{color:var(--green);}
+.car-stat-val.yellow{color:var(--yellow);}
+.car-card-footer{padding:8px 16px 12px;border-top:1px solid rgba(255,255,255,.06);display:flex;align-items:center;justify-content:space-between;}
+.car-score{color:var(--yellow);font-size:11px;letter-spacing:1px;}
+.car-tag-list{display:flex;gap:4px;flex-wrap:wrap;}
+.car-tag{font-size:9px;font-weight:700;padding:2px 6px;border-radius:2px;background:rgba(0,200,83,.1);color:var(--green);}
+.car-detail-box{background:linear-gradient(135deg,#141414,#1c1c1c);border:2px solid rgba(255,214,0,.3);border-radius:12px;padding:28px;margin-top:22px;display:none;}
+.car-detail-box.show{display:block;}
+.car-detail-top{display:flex;align-items:center;gap:18px;margin-bottom:20px;flex-wrap:wrap;}
+.car-detail-icon{font-size:52px;}
+.car-detail-info h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:30px;text-transform:uppercase;}
+.car-detail-info p{font-size:14px;color:var(--gray);margin:0;}
+.car-detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:18px;}
+.car-detail-stat{background:var(--dark3);border-radius:8px;padding:12px 14px;text-align:center;}
+.cds-icon{font-size:20px;margin-bottom:3px;}
+.cds-label{font-size:10px;color:var(--gray);text-transform:uppercase;letter-spacing:.06em;}
+.cds-val{font-size:16px;font-weight:800;color:var(--white);}
+.car-pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.pro-list,.con-list{background:var(--dark4);border-radius:8px;padding:14px;}
+.pro-list h4{font-size:12px;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;}
+.con-list h4{font-size:12px;font-weight:800;color:var(--red);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;}
+.pro-list li,.con-list li{font-size:13px;color:var(--gray-light);list-style:none;padding:3px 0;display:flex;gap:6px;align-items:flex-start;}
+.pro-list li::before{content:'✓';color:var(--green);font-weight:900;flex-shrink:0;}
+.con-list li::before{content:'×';color:var(--red);font-weight:900;flex-shrink:0;}
+
+/* TESTIMONIALS */
+.testimonials{background:var(--black);}
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;margin-top:36px;}
+.testi-card{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:26px 22px;position:relative;}
+.testi-card::before{content:'"';font-family:Georgia,serif;font-size:64px;color:rgba(255,214,0,.12);position:absolute;top:6px;left:14px;line-height:1;}
+.stars{color:var(--yellow);font-size:14px;margin-bottom:10px;letter-spacing:2px;}
+.testi-text{font-size:14px;color:var(--gray-light);line-height:1.6;margin-bottom:14px;font-style:italic;}
+.testi-author{display:flex;align-items:center;gap:10px;}
+.testi-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:800;color:var(--black);flex-shrink:0;}
+.av-a{background:#FFD600;}.av-b{background:#00C853;}.av-c{background:#FF6D00;}.av-d{background:#2979FF;}.av-e{background:#E040FB;}
+.testi-name{font-weight:700;font-size:14px;color:var(--white);}
+.testi-loc{font-size:12px;color:var(--gray);}
+
+/* GUARANTEE */
+.guarantee{background:var(--dark2);}
+.guarantee-box{background:linear-gradient(135deg,#1a1a1a,#202020);border:2px solid rgba(0,200,83,.3);border-radius:14px;padding:46px 38px;text-align:center;max-width:580px;margin:0 auto;}
+.guarantee-icon{font-size:60px;margin-bottom:18px;}
+.guarantee-box h2{color:var(--green);font-size:clamp(26px,4vw,38px);}
+.guarantee-box p{font-size:15px;max-width:440px;margin:0 auto;}
+
+/* OFFER */
+.offer{background:var(--black);}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;align-items:start;}
+.offer-box-v2{background:linear-gradient(135deg,#141414,#1c1c1c);border:2px solid rgba(255,255,255,.1);border-radius:16px;padding:38px 30px;text-align:center;position:relative;overflow:hidden;transition:transform .2s,border-color .2s;}
+.offer-box-v2:hover{transform:translateY(-4px);}
+.offer-box-v2.featured{border-color:rgba(255,214,0,.5);background:linear-gradient(135deg,#161610,#1e1e14);}
+.offer-box-v2.featured::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 40% at 50% -10%,rgba(255,214,0,.1),transparent 60%);pointer-events:none;}
+.featured-ribbon{background:var(--yellow);color:var(--black);font-weight:900;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:8px 0;margin:-38px -30px 30px;display:block;}
+.offer-plan-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:26px;text-transform:uppercase;color:var(--white);margin-bottom:4px;}
+.offer-plan-desc{font-size:13px;color:var(--gray);margin-bottom:18px;}
+.price-old{font-size:15px;color:var(--gray);text-decoration:line-through;margin-bottom:2px;}
+.price-real{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:68px;color:var(--yellow);line-height:1;margin-bottom:4px;}
+.price-real sup{font-size:28px;vertical-align:top;margin-top:10px;}
+.price-real.org{color:var(--orange);}
+.price-note{font-size:12px;color:var(--gray);margin-bottom:22px;}
+.offer-includes-v2{list-style:none;text-align:left;margin:14px 0 24px;display:flex;flex-direction:column;gap:8px;}
+.offer-includes-v2 li{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--gray-light);line-height:1.4;}
+.offer-includes-v2 li::before{content:'✓';display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;min-width:17px;background:var(--green);color:var(--black);font-weight:900;font-size:10px;border-radius:50%;margin-top:1px;}
+.offer-includes-v2 li.bonus-item::before{background:var(--orange);}
+.payment-icons{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:14px;}
+.payment-icon{background:var(--dark3);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:5px 10px;font-size:11px;color:var(--gray);font-weight:700;}
+
+/* FAQ */
+.faq{background:var(--dark2);}
+.faq-list{margin-top:36px;display:flex;flex-direction:column;gap:10px;}
+.faq-item{background:var(--dark3);border:1px solid rgba(255,255,255,.07);border-radius:8px;overflow:hidden;}
+.faq-q{padding:18px 22px;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--white);user-select:none;transition:background .2s;}
+.faq-q:hover{background:rgba(255,255,255,.03);}
+.faq-icon{width:24px;height:24px;border-radius:50%;border:2px solid rgba(255,214,0,.4);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--yellow);flex-shrink:0;transition:transform .3s;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s;padding:0 22px;}
+.faq-item.open .faq-a{max-height:200px;padding:0 22px 18px;}
+.faq-a p{font-size:14px;color:var(--gray);margin:0;}
+
+/* FINAL CTA */
+.final-cta{background:var(--yellow);padding:76px 24px;text-align:center;position:relative;overflow:hidden;}
+.final-cta::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(0,0,0,.03) 0px,rgba(0,0,0,.03) 1px,transparent 1px,transparent 8px);}
+.final-cta h2{color:var(--black);font-size:clamp(30px,6vw,52px);max-width:700px;margin:0 auto 14px;}
+.final-cta p{color:rgba(0,0,0,.65);max-width:480px;margin:0 auto 32px;font-size:17px;}
+.cta-btn-dark{display:inline-block;background:var(--black);color:var(--yellow);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(18px,3.5vw,24px);letter-spacing:.03em;text-transform:uppercase;text-decoration:none;padding:18px 44px;border-radius:4px;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;box-shadow:0 8px 32px rgba(0,0,0,.3);}
+.cta-btn-dark:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.4);}
+.final-cta-note{margin-top:14px;font-size:12px;color:rgba(0,0,0,.5);}
+footer{background:var(--dark);padding:28px 24px;text-align:center;border-top:1px solid rgba(255,255,255,.06);}
+footer p{font-size:12px;color:var(--gray);margin:0;}
+footer a{color:var(--gray);}
+
+/* STICKY */
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;background:rgba(10,10,10,.97);backdrop-filter:blur(12px);border-top:1px solid rgba(255,214,0,.25);padding:12px 24px;display:flex;align-items:center;justify-content:center;gap:18px;z-index:900;transform:translateY(100%);transition:transform .4s ease;flex-wrap:wrap;}
+.sticky-bar.show{transform:translateY(0);}
+.sticky-bar span{font-size:13px;color:var(--gray-light);}
+.sticky-bar strong{color:var(--yellow);}
+.sticky-cta{background:var(--yellow);color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:17px;text-transform:uppercase;text-decoration:none;padding:11px 26px;border-radius:4px;white-space:nowrap;border:none;cursor:pointer;transition:background .15s;}
+.sticky-cta:hover{background:#FFE033;}
+
+/* CART */
+.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:1000;opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(4px);}
+.cart-overlay.open{opacity:1;pointer-events:all;}
+.cart-drawer{position:fixed;right:0;top:0;bottom:0;width:min(480px,100vw);background:#141414;box-shadow:-20px 0 60px rgba(0,0,0,.7);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);z-index:1001;overflow:hidden;}
+.cart-overlay.open .cart-drawer{transform:translateX(0);}
+.cart-header{padding:18px 22px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between;flex-shrink:0;background:#1a1a1a;}
+.cart-header h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;text-transform:uppercase;display:flex;align-items:center;gap:8px;}
+.cart-count{background:var(--yellow);color:var(--black);width:22px;height:22px;border-radius:50%;font-size:12px;display:flex;align-items:center;justify-content:center;}
+.cart-close{background:var(--dark3);border:none;color:var(--white);width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.cart-close:hover{background:#333;}
+.cart-body{flex:1;overflow-y:auto;padding:18px 22px;}
+.cart-product{background:var(--dark2);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:16px 14px;margin-bottom:18px;display:flex;gap:14px;align-items:flex-start;}
+.cart-product-icon{font-size:34px;flex-shrink:0;}
+.cart-product-info{flex:1;}
+.cart-product-info h4{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:18px;text-transform:uppercase;margin-bottom:2px;}
+.cart-product-info p{font-size:12px;color:var(--gray);margin:0;}
+.cart-product-price{text-align:right;flex-shrink:0;}
+.cpp-old{font-size:11px;color:var(--gray);text-decoration:line-through;}
+.cpp-new{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--yellow);}
+.cart-upsell-title{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.cart-upsell-title::after{content:'';flex:1;height:1px;background:rgba(255,109,0,.2);}
+.upsell-bundle{background:linear-gradient(135deg,rgba(255,109,0,.08),rgba(255,109,0,.04));border:2px dashed rgba(255,109,0,.3);border-radius:10px;padding:16px;margin-bottom:14px;cursor:pointer;transition:all .2s;user-select:none;}
+.upsell-bundle:hover{border-color:rgba(255,109,0,.6);background:rgba(255,109,0,.1);}
+.upsell-bundle.checked{border-color:var(--orange);border-style:solid;background:rgba(255,109,0,.1);}
+.ub-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.ub-check{width:24px;height:24px;border-radius:6px;border:2px solid rgba(255,109,0,.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;font-size:13px;}
+.upsell-bundle.checked .ub-check{background:var(--orange);border-color:var(--orange);}
+.ub-check-hidden{opacity:0;transition:opacity .2s;}
+.upsell-bundle.checked .ub-check-hidden{opacity:1;}
+.ub-title{font-weight:800;font-size:15px;color:var(--white);}
+.ub-price{margin-left:auto;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:18px;color:var(--orange);}
+.ub-items{display:flex;flex-direction:column;gap:5px;}
+.ub-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gray-light);}
+.ub-item-icon{font-size:16px;}
+.ub-savings{margin-top:10px;font-size:11px;color:var(--green);font-weight:700;text-align:center;}
+.cart-footer{padding:18px 22px;border-top:1px solid rgba(255,255,255,.08);flex-shrink:0;background:#1a1a1a;}
+.cart-total-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+.cart-total-label{font-size:14px;color:var(--gray-light);}
+.cart-total-val{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:36px;color:var(--yellow);}
+.cart-savings-text{font-size:12px;color:var(--green);font-weight:700;text-align:right;margin-bottom:14px;}
+.cart-cta{width:100%;padding:17px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:20px;text-transform:uppercase;letter-spacing:.03em;border:none;border-radius:6px;cursor:pointer;background:var(--yellow);color:var(--black);transition:background .15s,transform .1s;box-shadow:0 4px 20px rgba(255,214,0,.3);}
+.cart-cta:hover{background:#FFE033;transform:translateY(-2px);}
+.cart-payment{display:flex;gap:6px;justify-content:center;margin-top:10px;flex-wrap:wrap;}
+.cart-payment span{font-size:11px;color:var(--gray);background:var(--dark3);padding:4px 10px;border-radius:3px;font-weight:700;}
+
+@keyframes fadeDown{from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+@media(max-width:600px){
+  section{padding:52px 16px;}
+  .solution-inner,.guarantee-box{padding:28px 18px;}
+  .offer-box-v2{padding:28px 16px;}
+  .featured-ribbon{margin:-28px -16px 20px;}
+  .final-cta{padding:56px 16px;}
+  .cta-btn,.cta-btn-dark{padding:16px 28px;width:100%;text-align:center;display:block;}
+  .ebook-cover{transform:none;}
+  .car-pros-cons{grid-template-columns:1fr;}
+  .cart-drawer{width:100vw;}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ CART OVERLAY ══ -->
+<div class="cart-overlay" id="cartOverlay" onclick="overlayClick(event)">
+ <div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+   <h3>🛒 Carrinho <span class="cart-count" id="cartCount">1</span></h3>
+   <button class="cart-close" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cart-body">
+   <!-- produto principal -->
+   <div class="cart-product">
+    <div class="cart-product-icon" id="cpIcon">📘</div>
+    <div class="cart-product-info">
+     <h4 id="cpName">Guia CNH do Zero</h4>
+     <p id="cpDesc">9 capítulos · PDF completo</p>
+    </div>
+    <div class="cart-product-price">
+     <div class="cpp-old" id="cpOld">R$ 47</div>
+     <div class="cpp-new" id="cpNew">R$ 27</div>
+    </div>
+   </div>
+   <!-- upsell bônus (só guia 1) -->
+   <div id="upsellSection">
+    <div class="cart-upsell-title">🎁 Adicione os 3 Bônus por +R$20</div>
+    <div class="upsell-bundle" id="bundleBtn" onclick="toggleBundle()">
+     <div class="ub-top">
+      <div class="ub-check"><span class="ub-check-hidden">✓</span></div>
+      <div class="ub-title">Pacote 3 Bônus</div>
+      <div class="ub-price">+R$ 20</div>
+     </div>
+     <div class="ub-items">
+      <div class="ub-item"><span class="ub-item-icon">📋</span> Checklist — Comprar Carro Usado</div>
+      <div class="ub-item"><span class="ub-item-icon">📊</span> Planilha — Custo Mensal do Carro</div>
+      <div class="ub-item"><span class="ub-item-icon">⛽</span> Lista — Carros Econômicos no Brasil</div>
+     </div>
+     <div class="ub-savings">Valor total dos bônus: R$ 63 → você paga só R$ 20</div>
+    </div>
+    <p style="font-size:12px;color:var(--gray);text-align:center;margin:0">Clique para adicionar ou remover o pacote de bônus</p>
+   </div>
+  </div>
+  <div class="cart-footer">
+   <div class="cart-total-row">
+    <span class="cart-total-label">Total:</span>
+    <span class="cart-total-val" id="cartTotal">R$ 27</span>
+   </div>
+   <div class="cart-savings-text" id="cartSavings">Você economiza R$ 20 hoje 🎉</div>
+   <button class="cart-cta" id="cartCta" onclick="alert('Redirecionar para checkout...')">Finalizar Compra →</button>
+   <div class="cart-payment">
+    <span>💳 Cartão</span><span>PIX</span><span>Boleto</span><span>🔒 Seguro</span>
+   </div>
+  </div>
+ </div>
+</div>
+
+<!-- ══ PAGE ══ -->
+<div class="bar">🔥 Oferta especial por tempo limitado <span>·</span> Acesso imediato <span>·</span> Garantia de 7 dias</div>
+
+<!-- HERO -->
+<section class="hero">
+ <div class="container">
+  <div class="hero-badge">📘 2 Guias Completos · Lançamento 2025</div>
+  <h1>Tire Sua CNH <em>Sem Confusão</em> e Ainda Saiba Escolher o <em>Primeiro Carro</em> Sem Cair em Golpe</h1>
+  <p class="hero-sub">Os dois guias que te levam do zero absoluto — <strong>da primeira aula até o carro na sua garagem</strong> — com segurança, economia e sem dor de cabeça.</p>
+  <button class="cta-btn" onclick="openCart('g1')">🚗 Ver os Guias e Escolher o Meu</button>
+  <p class="hero-note"><span>🔒 Compra segura</span> &nbsp;·&nbsp; Acesso imediato &nbsp;·&nbsp; Garantia de 7 dias</p>
+  <div class="hero-mockup">
+   <div class="ebook-cover">
+    <div class="ec-icon">🚦</div><div class="ec-top">Guia 1 · CNH</div>
+    <div class="ec-title">Guia <em>CNH</em><br>do Zero</div>
+    <div class="ec-sub">Da matrícula até a aprovação</div>
+    <div class="ec-road"></div><div class="ec-old">De R$ 47</div><div class="ec-price">R$ 27</div>
+   </div>
+   <div class="ebook-cover orange">
+    <div class="ec-icon">🚗</div><div class="ec-top org">Guia 2 · Completo</div>
+    <div class="ec-title" style="color:var(--white)">Guia <span style="color:var(--orange)">Completo</span><br>CNH + Carro</div>
+    <div class="ec-sub">CNH + Primeiro Carro + 3 Bônus</div>
+    <div class="ec-road"></div><div class="ec-old">De R$ 147</div><div class="ec-price org">R$ 47</div>
+   </div>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- PAIN -->
+<section class="pain">
+ <div class="container">
+  <div class="reveal"><span class="section-label">A dura realidade</span>
+   <h2>Você Reconhece Alguma <em>Dessas Situações?</em></h2>
+   <p>A maioria das pessoas chega na autoescola sem nenhuma informação e acaba pagando caro por isso — literalmente.</p>
+  </div>
+  <div class="pain-grid">
+   <div class="pain-card reveal"><div class="pain-card-icon">😰</div><h3>"Não sei nem por onde começar"</h3><p>Detran, médico, psicólogo, aulas... a burocracia parece interminável e confusa.</p></div>
+   <div class="pain-card reveal"><div class="pain-card-icon">📋</div><h3>Medo de reprovar na prova teórica</h3><p>São 30 questões sobre legislação, sinalização e mecânica. Sem método certo, é difícil.</p></div>
+   <div class="pain-card reveal"><div class="pain-card-icon">💸</div><h3>Gastar dinheiro com aulas extras</h3><p>Quem reprova na prática paga mais aulas. Sem orientação, é comum repetir duas ou três vezes.</p></div>
+   <div class="pain-card reveal"><div class="pain-card-icon">🚗</div><h3>Comprar o carro errado depois</h3><p>Sem experiência, é fácil cair num carro caro de manter, com defeito ou até em golpe.</p></div>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- SOLUTION -->
+<section class="solution">
+ <div class="container">
+  <div class="solution-inner reveal">
+   <span class="section-label">A solução que você precisava</span>
+   <h2>Apresentando os <em>Guias CNH do Zero</em></h2>
+   <p>Dois ebooks criados para quem quer entender <strong>todo o processo da habilitação e da compra do primeiro carro</strong> antes de gastar um centavo à toa.</p>
+   <p>Sem enrolação. Sem linguagem complicada. <strong>Do começo ao fim, passo a passo, em linguagem simples.</strong> Você chega na autoescola — e na concessionária — sabendo exatamente o que fazer.</p>
+   <br><button class="cta-btn" style="animation:none" onclick="document.getElementById('oferta').scrollIntoView({behavior:'smooth'})">Ver as Opções e Comprar →</button>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- LEARN -->
+<section class="learn">
+ <div class="container-wide">
+  <div class="reveal" style="text-align:center">
+   <span class="section-label">Conteúdo dos guias</span>
+   <h2>O Que Você Vai <em>Aprender</em></h2>
+   <p style="max-width:500px;margin:0 auto 28px">Dois guias, um caminho completo. Explore o conteúdo de cada um.</p>
+  </div>
+  <div class="tabs reveal">
+   <button class="tab-btn active" onclick="showTab('g1',this)">📘 Guia 1 — CNH do Zero</button>
+   <button class="tab-btn" onclick="showTab('g2',this)">🚗 Guia 2 — CNH + Primeiro Carro</button>
+  </div>
+  <div class="tab-panel active" id="tab-g1">
+   <div class="chapters-grid">
+    <div class="chapter-item reveal"><div class="ch-num">01</div><div class="ch-text"><strong>O que é a CNH</strong><span>Categorias, tipos de veículos e o que cada habilitação permite</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">02</div><div class="ch-text"><strong>Quem pode tirar CNH</strong><span>Idade mínima, documentos necessários e requisitos</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">03</div><div class="ch-text"><strong>Como começar</strong><span>Escolha da autoescola, processo no DETRAN e custos médios</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">04</div><div class="ch-text"><strong>Exames obrigatórios</strong><span>Exame médico, psicotécnico e como passar em cada um</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">05</div><div class="ch-text"><strong>Curso teórico</strong><span>Matérias, horas de aula e dicas para estudar com eficiência</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">06</div><div class="ch-text"><strong>Prova teórica</strong><span>Como funciona, o que mais cai e os erros que eliminam</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">07</div><div class="ch-text"><strong>Aulas práticas</strong><span>Quantas aulas e como aproveitar cada uma ao máximo</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">08</div><div class="ch-text"><strong>Prova prática</strong><span>Os erros que mais reprovam e dicas para passar de primeira</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">09</div><div class="ch-text"><strong>CNH Provisória</strong><span>Regras, restrições e infrações que podem cancelar sua habilitação</span></div></div>
+   </div>
+  </div>
+  <div class="tab-panel" id="tab-g2">
+   <div class="part-label">📘 Parte 1 — Tirando a CNH do Zero (9 capítulos incluídos)</div>
+   <div class="chapters-grid" style="margin-bottom:8px">
+    <div class="chapter-item reveal"><div class="ch-num">01</div><div class="ch-text"><strong>O que é a CNH</strong><span>Categorias e tipos de veículos</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">02</div><div class="ch-text"><strong>Quem pode tirar CNH</strong><span>Idade, documentos e requisitos</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">03</div><div class="ch-text"><strong>Como começar</strong><span>Autoescola, DETRAN e custos</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">04</div><div class="ch-text"><strong>Exames obrigatórios</strong><span>Médico, psicotécnico, como passar</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">05</div><div class="ch-text"><strong>Curso teórico</strong><span>Matérias, horas e dicas de estudo</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">06</div><div class="ch-text"><strong>Prova teórica</strong><span>Como funciona e erros comuns</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">07</div><div class="ch-text"><strong>Aulas práticas</strong><span>Quantas aulas e como aprender mais rápido</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">08</div><div class="ch-text"><strong>Prova prática</strong><span>Erros que reprovam e dicas</span></div></div>
+    <div class="chapter-item reveal"><div class="ch-num">09</div><div class="ch-text"><strong>CNH Provisória</strong><span>Regras e infrações que cancelam</span></div></div>
+   </div>
+   <div class="part-label org">🚗 Parte 2 — Escolhendo o Primeiro Carro (exclusivo Guia 2)</div>
+   <div class="chapters-grid">
+    <div class="chapter-item org reveal"><div class="ch-num org">10</div><div class="ch-text"><strong>Quanto custa ter um carro</strong><span>Combustível, seguro, manutenção, IPVA e licenciamento</span></div></div>
+    <div class="chapter-item org reveal"><div class="ch-num org">11</div><div class="ch-text"><strong>Como escolher o primeiro carro</strong><span>Consumo, manutenção, facilidade de dirigir, revenda</span></div></div>
+    <div class="chapter-item org reveal"><div class="ch-num org">12</div><div class="ch-text"><strong>Melhores carros para iniciantes</strong><span>Mobi, Uno, Gol, Onix, HB20 — comparativo real</span></div></div>
+    <div class="chapter-item org reveal"><div class="ch-num org">13</div><div class="ch-text"><strong>Exemplo prático (Fiat Mobi)</strong><span>Preço, consumo, seguro, manutenção e problemas comuns</span></div></div>
+    <div class="chapter-item org reveal"><div class="ch-num org">14</div><div class="ch-text"><strong>Como avaliar um carro usado</strong><span>Checklist: km, histórico, lataria, motor, documentos</span></div></div>
+    <div class="chapter-item org reveal"><div class="ch-num org">15</div><div class="ch-text"><strong>Como evitar golpes na compra</strong><span>Carro financiado, roubado e documentação irregular</span></div></div>
+    <div class="chapter-item org reveal"><div class="ch-num org">16</div><div class="ch-text"><strong>Transferência do veículo</strong><span>Contrato, reconhecimento de firma e DETRAN</span></div></div>
+    <div class="chapter-item org reveal"><div class="ch-num org">17</div><div class="ch-text"><strong>Primeiros cuidados com o carro</strong><span>Revisão, troca de óleo, calibragem e manutenção básica</span></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- BONUS -->
+<section class="bonus">
+ <div class="container-wide">
+  <div class="reveal" style="text-align:center">
+   <span class="section-label">Exclusivo no Guia 2</span>
+   <h2>3 Bônus que <em>Valem Mais</em> que o Preço do Guia</h2>
+   <p style="max-width:500px;margin:0 auto">Incluídos no Guia 2 — ou adicionáveis no carrinho ao comprar o Guia 1.</p>
+  </div>
+  <div class="bonus-grid">
+   <div class="bonus-card reveal"><div class="bonus-num">01</div><div class="bonus-icon">📋</div><h3>Checklist para Comprar Carro Usado</h3><p>Lista completa com tudo que você precisa verificar antes de assinar qualquer contrato.</p><div class="bonus-value">Valor: R$ 27 — incluso grátis</div></div>
+   <div class="bonus-card reveal"><div class="bonus-num">02</div><div class="bonus-icon">📊</div><h3>Planilha de Custo Mensal do Carro</h3><p>Organize combustível, seguro, manutenção e parcela num só lugar. Saiba exatamente o que o carro vai custar.</p><div class="bonus-value">Valor: R$ 19 — incluso grátis</div></div>
+   <div class="bonus-card reveal"><div class="bonus-num">03</div><div class="bonus-icon">⛽</div><h3>Lista de Carros Econômicos no Brasil</h3><p>Os modelos com melhor consumo por litro para quem quer gastar menos com combustível. Dados reais do Inmetro.</p><div class="bonus-value">Valor: R$ 17 — incluso grátis</div></div>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- CAR EXPLORER -->
+<section class="car-explorer">
+ <div class="container-wide">
+  <div class="reveal" style="text-align:center">
+   <span class="section-label">Prévia do Guia 2 · Banco de Carros</span>
+   <h2>Explore os <em>Melhores Carros</em> para Iniciantes</h2>
+   <p style="max-width:540px;margin:0 auto 28px">Filtre por marca e clique num carro para ver a análise completa. Esse é o tipo de dado que o Guia 2 traz para todos os modelos.</p>
+  </div>
+  <div class="brand-pills reveal" id="brandPills"></div>
+  <div class="cars-grid" id="carsGrid"></div>
+  <div class="car-detail-box" id="carDetail">
+   <div class="car-detail-top">
+    <div class="car-detail-icon" id="dIcon">🚗</div>
+    <div class="car-detail-info"><h3 id="dName">—</h3><p id="dFull">—</p></div>
+   </div>
+   <div class="car-detail-grid" id="dGrid"></div>
+   <div class="car-pros-cons" id="dPC"></div>
+  </div>
+  <div style="text-align:center;margin-top:28px" class="reveal">
+   <p style="font-size:14px;color:var(--gray);margin-bottom:14px">O Guia 2 traz análise completa + capítulo exclusivo sobre como não cair em golpe na compra.</p>
+   <button class="cta-btn org-btn" style="animation:none" onclick="openCart('g2')">🚗 Quero o Guia Completo</button>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- FOR WHO -->
+<section class="for-who">
+ <div class="container">
+  <div class="reveal"><span class="section-label">É para você?</span>
+   <h2>Este Guia é <em>Ideal Para Você</em> Se...</h2>
+  </div>
+  <ul class="for-who-list">
+   <li class="reveal">Você vai tirar sua primeira CNH e não sabe por onde começar</li>
+   <li class="reveal">Você quer evitar reprovações e gastos extras com aulas desnecessárias</li>
+   <li class="reveal">Você quer entender todo o processo antes de se matricular em qualquer autoescola</li>
+   <li class="reveal">Você tem medo das provas teórica e prática e quer chegar preparado</li>
+   <li class="reveal">Você quer saber qual carro comprar depois de tirar a habilitação</li>
+   <li class="reveal">Você quer economizar tempo, dinheiro e dor de cabeça do começo ao fim</li>
+  </ul>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- BENEFITS -->
+<section class="benefits">
+ <div class="container-wide">
+  <div class="reveal" style="text-align:center"><span class="section-label">Seus resultados</span><h2>O Que Você <em>Ganha</em> Com os Guias</h2></div>
+  <div class="benefits-grid">
+   <div class="benefit-card reveal"><div class="benefit-emoji">💰</div><h3>Economize Dinheiro</h3><p>Evite reprovações e escolha o carro certo — gaste só o essencial.</p></div>
+   <div class="benefit-card reveal"><div class="benefit-emoji">🧠</div><h3>Evite Erros Clássicos</h3><p>Saiba de antemão as armadilhas que fazem candidatos reprovarem.</p></div>
+   <div class="benefit-card reveal"><div class="benefit-emoji">💪</div><h3>Ganhe Confiança</h3><p>Chegue em cada etapa preparado e tranquilo, sabendo o que esperar.</p></div>
+   <div class="benefit-card reveal"><div class="benefit-emoji">🗺️</div><h3>Entenda Tudo Antes</h3><p>Visão clara de todo o processo antes de gastar qualquer centavo.</p></div>
+   <div class="benefit-card reveal"><div class="benefit-emoji">⚡</div><h3>Processo Mais Rápido</h3><p>Quem sabe o que fazer erra menos e termina mais rápido.</p></div>
+   <div class="benefit-card reveal"><div class="benefit-emoji">📱</div><h3>Acesso em Qualquer Lugar</h3><p>PDF no celular, tablet ou computador. Acesso imediato e para sempre.</p></div>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+ <div class="container-wide">
+  <div class="reveal" style="text-align:center"><span class="section-label">Prova social</span><h2>Quem Já Leu <em>Está Aprovando</em></h2></div>
+  <div class="testi-grid">
+   <div class="testi-card reveal"><div class="stars">★★★★★</div><p class="testi-text">Eu estava completamente perdida. Não sabia se precisava ir ao Detran primeiro ou direto na autoescola. O guia clarificou tudo de forma bem simples. Hoje estou nas aulas e me sinto muito mais segura.</p><div class="testi-author"><div class="testi-avatar av-a">J</div><div><div class="testi-name">Juliana Ferreira</div><div class="testi-loc">São Paulo, SP · 22 anos</div></div></div></div>
+   <div class="testi-card reveal"><div class="stars">★★★★★</div><p class="testi-text">Meu irmão reprovou três vezes na teórica porque estudou errado. Eu li o guia antes de começar qualquer coisa e entendi exatamente como me preparar. Passei na primeira tentativa.</p><div class="testi-author"><div class="testi-avatar av-b">R</div><div><div class="testi-name">Rafael Mendes</div><div class="testi-loc">Belo Horizonte, MG · 19 anos</div></div></div></div>
+   <div class="testi-card reveal"><div class="stars">★★★★★</div><p class="testi-text">O capítulo sobre como avaliar um carro usado me salvou. Fui ver um Gol que parecia ótimo, apliquei o checklist e descobri que o hodômetro havia sido adulterado. Evitei um prejuízo enorme.</p><div class="testi-author"><div class="testi-avatar av-c">C</div><div><div class="testi-name">Camila Rocha</div><div class="testi-loc">Curitiba, PR · 25 anos</div></div></div></div>
+   <div class="testi-card reveal"><div class="stars">★★★★★</div><p class="testi-text">Comprei o Guia 2 e já na primeira semana entendi tudo sobre o processo da CNH e os custos reais de ter um carro. A planilha de custo mensal me ajudou a planejar o orçamento antes de comprar.</p><div class="testi-author"><div class="testi-avatar av-d">L</div><div><div class="testi-name">Lucas Andrade</div><div class="testi-loc">Porto Alegre, RS · 21 anos</div></div></div></div>
+   <div class="testi-card reveal"><div class="stars">★★★★★</div><p class="testi-text">Nunca imaginei que escolher a autoescola errada pudesse me custar tanto. O guia me mostrou o que observar antes de se matricular. Economizei bastante com essa dica sozinha.</p><div class="testi-author"><div class="testi-avatar av-e">B</div><div><div class="testi-name">Beatriz Lima</div><div class="testi-loc">Recife, PE · 28 anos</div></div></div></div>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- GUARANTEE -->
+<section class="guarantee">
+ <div class="container">
+  <div class="guarantee-box reveal">
+   <div class="guarantee-icon">🛡️</div>
+   <h2>Garantia Total de 7 Dias</h2><br>
+   <p>Se você comprar, ler e achar que não valeu, é só mandar um e-mail em até <strong>7 dias</strong> e a gente devolve 100% do seu dinheiro. Sem perguntas, sem burocracia.</p><br>
+   <p>O risco é todo nosso. Você não tem nada a perder.</p>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- OFFER -->
+<section class="offer" id="oferta">
+ <div class="container-wide">
+  <div class="reveal" style="text-align:center;margin-bottom:36px">
+   <span class="section-label">Escolha seu guia</span>
+   <h2>Selecione a <em>Opção Ideal</em> Para Você</h2>
+   <p style="max-width:480px;margin:0 auto">Ambos têm garantia de 7 dias e acesso imediato. Clique em Comprar para abrir o carrinho.</p>
+  </div>
+  <div class="pricing-grid">
+   <div class="offer-box-v2 reveal">
+    <div class="offer-plan-name">📘 Guia 1 — CNH do Zero</div>
+    <p class="offer-plan-desc">Para quem quer tirar a CNH com segurança</p>
+    <p class="price-old">De R$ 47,00</p>
+    <div class="price-real"><sup>R$</sup>27</div>
+    <p class="price-note">Pagamento único · Acesso imediato</p>
+    <ul class="offer-includes-v2">
+     <li>9 capítulos completos sobre o processo da CNH</li>
+     <li>Passo a passo visual do início ao fim</li>
+     <li>Lista dos erros que mais reprovam candidatos</li>
+     <li>Checklist de documentos necessários</li>
+     <li>Dicas para economizar no processo</li>
+     <li>Atualizações gratuitas para sempre</li>
+    </ul>
+    <button class="cta-btn" style="width:100%;animation:none;font-size:17px" onclick="openCart('g1')">🛒 Comprar Guia 1</button>
+    <div class="payment-icons"><span class="payment-icon">💳 Cartão</span><span class="payment-icon">PIX</span><span class="payment-icon">Boleto</span></div>
+   </div>
+   <div class="offer-box-v2 featured reveal">
+    <span class="featured-ribbon">⭐ Mais Completo · Melhor Custo-Benefício</span>
+    <div class="offer-plan-name">🚗 Guia 2 — CNH + Primeiro Carro</div>
+    <p class="offer-plan-desc">Para quem quer a CNH <strong>e</strong> já sair sabendo qual carro comprar</p>
+    <p class="price-old">De R$ 147,00</p>
+    <div class="price-real org"><sup>R$</sup>47</div>
+    <p class="price-note" style="color:var(--orange);font-weight:700">+ Pacote Bônus por R$20 (opcional no carrinho)</p>
+    <ul class="offer-includes-v2">
+     <li>Tudo do Guia 1 — 9 capítulos da CNH</li>
+     <li>Parte 2 — 8 capítulos sobre o primeiro carro</li>
+     <li>Análise real dos melhores carros para iniciantes</li>
+     <li>Como evitar golpes na compra de carro usado</li>
+     <li>Transferência no DETRAN passo a passo</li>
+     <li>Atualizações gratuitas para sempre</li>
+    </ul>
+    <div style="background:rgba(255,109,0,.08);border:1px dashed rgba(255,109,0,.35);border-radius:8px;padding:12px 14px;margin-bottom:20px;text-align:left">
+     <p style="font-size:12px;font-weight:800;color:var(--orange);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">🎁 Pacote Bônus — +R$20 no carrinho</p>
+     <p style="font-size:12px;color:var(--gray);margin:0;line-height:1.5">📋 Checklist Carro Usado &nbsp;·&nbsp; 📊 Planilha Custo Mensal &nbsp;·&nbsp; ⛽ Lista Carros Econômicos</p>
+    </div>
+    <button class="cta-btn org-btn" style="width:100%;animation:none;font-size:17px" onclick="openCart('g2')">🛒 Comprar Guia 2 — R$47</button>
+    <div class="payment-icons"><span class="payment-icon">💳 Cartão</span><span class="payment-icon">PIX</span><span class="payment-icon">Boleto</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- FAQ -->
+<section class="faq">
+ <div class="container">
+  <div class="reveal" style="text-align:center"><span class="section-label">Dúvidas frequentes</span><h2>Perguntas <em>Frequentes</em></h2></div>
+  <div class="faq-list">
+   <div class="faq-item reveal"><div class="faq-q">O guia serve para qualquer estado do Brasil?<div class="faq-icon">+</div></div><div class="faq-a"><p>Sim. O processo da CNH é regulamentado pelo Contran e Denatran, órgãos federais. As etapas são as mesmas em todo o Brasil — o que varia é apenas o valor cobrado pelas autoescolas e Detrans de cada estado.</p></div></div>
+   <div class="faq-item reveal"><div class="faq-q">O conteúdo é atualizado?<div class="faq-icon">+</div></div><div class="faq-a"><p>Sim. O guia é atualizado sempre que há mudanças relevantes na legislação de trânsito. Quem compra recebe todas as atualizações gratuitamente, para sempre.</p></div></div>
+   <div class="faq-item reveal"><div class="faq-q">Recebo o ebook na hora?<div class="faq-icon">+</div></div><div class="faq-a"><p>Sim! Assim que o pagamento for confirmado, você recebe o link de acesso por e-mail em poucos minutos. No caso de Pix, o acesso é quase imediato.</p></div></div>
+   <div class="faq-item reveal"><div class="faq-q">Qual a diferença entre o Guia 1 e o Guia 2?<div class="faq-icon">+</div></div><div class="faq-a"><p>O Guia 1 (R$27) cobre todo o processo da CNH. O Guia 2 (R$47) inclui tudo do Guia 1 + 8 capítulos exclusivos sobre como escolher e comprar o primeiro carro. Em ambos, você pode adicionar o Pacote de 3 Bônus por +R$20 no carrinho.</p></div></div>
+   <div class="faq-item reveal"><div class="faq-q">Os bônus vêm incluídos ou são separados?<div class="faq-icon">+</div></div><div class="faq-a"><p>Os bônus são um pacote opcional que você adiciona no carrinho — tanto no Guia 1 quanto no Guia 2 — por apenas +R$20. Se quiser só o guia, compra sem os bônus. Se quiser tudo, adiciona o pacote. Simples assim.</p></div></div>
+   <div class="faq-item reveal"><div class="faq-q">E se eu não gostar?<div class="faq-icon">+</div></div><div class="faq-a"><p>Sem problema. Você tem 7 dias de garantia total. Se por qualquer motivo não ficar satisfeito, é só enviar um e-mail e devolvemos 100% do valor pago. Sem perguntas e sem burocracia.</p></div></div>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+ <div class="container">
+  <h2>Comece Sua CNH <em>Do Jeito Certo</em> — Hoje.</h2>
+  <p>Cada dia que passa sem a habilitação é mais um dia sem independência. Não espere reprovar para buscar informação.</p>
+  <button class="cta-btn-dark" onclick="document.getElementById('oferta').scrollIntoView({behavior:'smooth'})">🚗 Escolher Meu Guia e Comprar Agora</button>
+  <p class="final-cta-note">Guia 1 por R$27 · Guia 2 por R$47 · Com Bônus por R$67 · Garantia de 7 dias</p>
+ </div>
+</section>
+
+<footer>
+ <p>© 2025 Guia CNH do Zero · Todos os direitos reservados · <a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a></p>
+ <p style="margin-top:8px">Este produto é um ebook digital. Os depoimentos são ilustrativos. Resultados individuais podem variar.</p>
+</footer>
+
+<div class="sticky-bar" id="stickyBar">
+ <span>📘 <strong>Guia CNH</strong> R$27 &nbsp;·&nbsp; 🚗 <strong>Guia 2</strong> <strong style="color:var(--orange)">R$47</strong> <span style="font-size:11px;color:var(--gray)">(+R$20 bônus opcionais)</span></span>
+ <button class="sticky-cta" onclick="openCart('g2')">Escolher Meu Guia →</button>
+</div>
+
+<script>
+// ═══ CAR DATABASE (mercado brasileiro) ═══════════════════════════
+const CARS=[
+ {id:'mobi',brand:'Fiat',name:'Mobi',full:'Fiat Mobi 1.0',icon:'🚙',price:'R$ 70–85 mil',consume:'14,5 km/L',insurance:'R$ 130–180/mês',maint:'R$ 600–900/ano',score:4,tags:['Econômico','Fácil'],pros:['Menor custo de manutenção','Leve e ágil na cidade','IPVA baixo','Peças muito baratas'],cons:['Motor básico sem turbo','Sem itens avançados','Pequeno para família']},
+ {id:'uno',brand:'Fiat',name:'Uno',full:'Fiat Uno 1.0',icon:'🚗',price:'R$ 65–80 mil',consume:'13,8 km/L',insurance:'R$ 120–160/mês',maint:'R$ 700–1.000/ano',score:4,tags:['Clássico','Barato'],pros:['Manutenção baratíssima','Fácil de estacionar','Mecânicos em todo lugar'],cons:['Design desatualizado','Menos confortável']},
+ {id:'argo',brand:'Fiat',name:'Argo',full:'Fiat Argo 1.0',icon:'🚙',price:'R$ 90–110 mil',consume:'13,2 km/L',insurance:'R$ 180–240/mês',maint:'R$ 900–1.300/ano',score:5,tags:['Moderno','Espaçoso'],pros:['Design moderno e bonito','Porta-malas generoso','Boa estabilidade'],cons:['Mais caro que Mobi/Uno','Consumo médio']},
+ {id:'cronos',brand:'Fiat',name:'Cronos',full:'Fiat Cronos 1.3',icon:'🚘',price:'R$ 95–120 mil',consume:'13,0 km/L',insurance:'R$ 200–260/mês',maint:'R$ 950–1.400/ano',score:4,tags:['Sedã','Confortável'],pros:['Porta-malas enorme 525L','Muito confortável','Bom valor de revenda'],cons:['Estilo sedã divide opiniões','Levemente mais pesado']},
+ {id:'gol',brand:'Volkswagen',name:'Gol',full:'Volkswagen Gol 1.0',icon:'🚗',price:'R$ 75–92 mil',consume:'13,0 km/L',insurance:'R$ 150–200/mês',maint:'R$ 800–1.100/ano',score:4,tags:['Clássico','Popular'],pros:['Muito popular (fácil revender)','Peças baratas e acessíveis','Resistente e durável'],cons:['Design sem novidades','Consumo médio']},
+ {id:'polo',brand:'Volkswagen',name:'Polo',full:'Volkswagen Polo 1.0 TSI',icon:'🚙',price:'R$ 110–130 mil',consume:'13,5 km/L',insurance:'R$ 220–300/mês',maint:'R$ 1.200–1.700/ano',score:5,tags:['Premium','Turbo'],pros:['Motor turbo eficiente','Acabamento superior','Estabilidade excelente'],cons:['Manutenção mais cara','Preço elevado para 1º carro']},
+ {id:'saveiro',brand:'Volkswagen',name:'Saveiro',full:'Volkswagen Saveiro 1.6',icon:'🚚',price:'R$ 90–115 mil',consume:'12,5 km/L',insurance:'R$ 160–210/mês',maint:'R$ 900–1.300/ano',score:3,tags:['Versátil','Carga'],pros:['Caçamba para carga','Resistente','Fácil de encontrar mecânico'],cons:['Menos confortável para passeio','Não ideal para cidades grandes']},
+ {id:'onix',brand:'Chevrolet',name:'Onix',full:'Chevrolet Onix 1.0 Turbo',icon:'🚙',price:'R$ 90–115 mil',consume:'13,8 km/L',insurance:'R$ 200–260/mês',maint:'R$ 1.000–1.400/ano',score:5,tags:['Mais vendido','Turbo'],pros:['Mais vendido do Brasil','Motor turbo eficiente','Ótima revenda','Confortável'],cons:['Manutenção do turbo exige cuidado','Preço subiu bastante']},
+ {id:'joy',brand:'Chevrolet',name:'Joy',full:'Chevrolet Joy 1.0',icon:'🚗',price:'R$ 72–85 mil',consume:'12,8 km/L',insurance:'R$ 140–190/mês',maint:'R$ 750–1.050/ano',score:3,tags:['Básico','Acessível'],pros:['Preço de entrada baixo','Seguro barato','Simples de manter'],cons:['Poucos itens de série','Interior muito simples']},
+ {id:'tracker',brand:'Chevrolet',name:'Tracker',full:'Chevrolet Tracker 1.0 Turbo',icon:'🚙',price:'R$ 120–150 mil',consume:'12,0 km/L',insurance:'R$ 280–380/mês',maint:'R$ 1.300–1.800/ano',score:4,tags:['SUV','Moderno'],pros:['SUV acessível','Boa altura do solo','Visual robusto'],cons:['Seguro caro','Acima do ideal como primeiro carro']},
+ {id:'hb20',brand:'Hyundai',name:'HB20',full:'Hyundai HB20 1.0',icon:'🚙',price:'R$ 82–105 mil',consume:'14,0 km/L',insurance:'R$ 170–220/mês',maint:'R$ 850–1.200/ano',score:5,tags:['Econômico','Garantia 5 anos'],pros:['Excelente acabamento','Consumo baixo','Garantia de 5 anos','Design moderno'],cons:['Peças levemente mais caras','Revenda um pouco menor que Onix']},
+ {id:'creta',brand:'Hyundai',name:'Creta',full:'Hyundai Creta 1.0 Turbo',icon:'🚙',price:'R$ 120–155 mil',consume:'12,5 km/L',insurance:'R$ 280–370/mês',maint:'R$ 1.300–1.800/ano',score:4,tags:['SUV','Elegante'],pros:['Design premium','Central multimídia grande','Alta percepção de valor'],cons:['Caro para iniciante','Seguro alto']},
+ {id:'etios',brand:'Toyota',name:'Etios',full:'Toyota Etios 1.3',icon:'🚗',price:'R$ 75–95 mil',consume:'13,5 km/L',insurance:'R$ 145–195/mês',maint:'R$ 700–950/ano',score:4,tags:['Confiável','Durável'],pros:['Durabilidade lendária Toyota','Manutenção barata','Baixíssimas despesas'],cons:['Design simples','Interior básico']},
+ {id:'yaris',brand:'Toyota',name:'Yaris',full:'Toyota Yaris 1.3',icon:'🚙',price:'R$ 95–115 mil',consume:'13,8 km/L',insurance:'R$ 190–250/mês',maint:'R$ 900–1.200/ano',score:5,tags:['Premium','Confiável'],pros:['Alta confiabilidade','Acabamento superior','Consumo eficiente'],cons:['Preço um pouco alto','Porta-malas menor']},
+ {id:'kwid',brand:'Renault',name:'Kwid',full:'Renault Kwid 1.0',icon:'🚙',price:'R$ 68–82 mil',consume:'15,2 km/L',insurance:'R$ 120–165/mês',maint:'R$ 600–850/ano',score:4,tags:['+ Econômico','Compacto'],pros:['Melhor consumo da categoria','Preço inicial mais baixo','Fácil de manobrar'],cons:['Motor fraco em subidas','Menos estável em rodovias']},
+ {id:'logan',brand:'Renault',name:'Logan',full:'Renault Logan 1.6',icon:'🚘',price:'R$ 82–100 mil',consume:'12,8 km/L',insurance:'R$ 155–205/mês',maint:'R$ 800–1.100/ano',score:3,tags:['Sedã','Porta-malas grande'],pros:['Porta-malas 510L','Confortável em viagens longas','Preço acessível'],cons:['Design pouco moderno','Consumo médio']},
+ {id:'fit',brand:'Honda',name:'Fit',full:'Honda Fit 1.5',icon:'🚙',price:'R$ 100–125 mil',consume:'13,2 km/L',insurance:'R$ 210–270/mês',maint:'R$ 1.000–1.400/ano',score:4,tags:['Versátil','Confiável'],pros:['Porta traseira versátil','Alta confiabilidade Honda','Praticidade no interior'],cons:['Preço acima da média','Seguro caro']},
+ {id:'city',brand:'Honda',name:'City',full:'Honda City Hatchback 1.5',icon:'🚘',price:'R$ 105–130 mil',consume:'13,0 km/L',insurance:'R$ 230–300/mês',maint:'R$ 1.100–1.500/ano',score:4,tags:['Sedã','Confiável'],pros:['Interior espaçoso','Confiabilidade Honda','Ótimo conforto'],cons:['Caro para 1º carro','Seguro elevado']},
+ {id:'kicks',brand:'Nissan',name:'Kicks',full:'Nissan Kicks 1.6',icon:'🚙',price:'R$ 110–140 mil',consume:'12,0 km/L',insurance:'R$ 250–340/mês',maint:'R$ 1.200–1.700/ano',score:4,tags:['SUV','Espaçoso'],pros:['Visual diferenciado','Interior espaçoso','Boa percepção de valor'],cons:['Seguro alto','Consumo não é o melhor']},
+ {id:'march',brand:'Nissan',name:'March',full:'Nissan March 1.0',icon:'🚗',price:'R$ 70–88 mil',consume:'13,2 km/L',insurance:'R$ 140–190/mês',maint:'R$ 750–1.050/ano',score:3,tags:['Compacto','Barato'],pros:['Preço acessível','Fácil de estacionar','Manutenção simples'],cons:['Interior basicão','Revenda menor']},
+];
+
+const BRANDS=[...new Set(CARS.map(c=>c.brand))];
+let activeFilter='Todos';
+let selectedId=null;
+
+function renderPills(){
+ const el=document.getElementById('brandPills');
+ el.innerHTML=['Todos',...BRANDS].map(b=>`<button class="brand-pill${b===activeFilter?' active':''}" onclick="filterBrand('${b}')">${b==='Todos'?'🚗 Todos':b}</button>`).join('');
+}
+function filterBrand(b){activeFilter=b;renderPills();renderCars();}
+function renderCars(){
+ const list=activeFilter==='Todos'?CARS:CARS.filter(c=>c.brand===activeFilter);
+ document.getElementById('carsGrid').innerHTML=list.map(c=>`
+  <div class="car-card${selectedId===c.id?' selected':''}" onclick="selectCar('${c.id}')">
+   <div class="car-card-header">
+    <div class="car-emoji">${c.icon}</div>
+    <span class="car-brand-tag">${c.brand}</span>
+    <div class="car-name">${c.name}</div>
+    <div class="car-full-name">${c.full}</div>
+   </div>
+   <div class="car-stats">
+    <div class="car-stat"><div class="car-stat-label">Preço</div><div class="car-stat-val yellow">${c.price}</div></div>
+    <div class="car-stat"><div class="car-stat-label">Consumo</div><div class="car-stat-val green">${c.consume}</div></div>
+    <div class="car-stat"><div class="car-stat-label">Seguro/mês</div><div class="car-stat-val">${c.insurance}</div></div>
+    <div class="car-stat"><div class="car-stat-label">Manutenção/ano</div><div class="car-stat-val">${c.maint}</div></div>
+   </div>
+   <div class="car-card-footer">
+    <div class="car-score">${'★'.repeat(c.score)}${'☆'.repeat(5-c.score)}</div>
+    <div class="car-tag-list">${c.tags.map(t=>`<span class="car-tag">${t}</span>`).join('')}</div>
+   </div>
+  </div>`).join('');
+}
+function selectCar(id){
+ selectedId=selectedId===id?null:id;
+ renderCars();
+ const box=document.getElementById('carDetail');
+ if(!selectedId){box.classList.remove('show');return;}
+ const c=CARS.find(x=>x.id===id);
+ document.getElementById('dIcon').textContent=c.icon;
+ document.getElementById('dName').textContent=c.name;
+ document.getElementById('dFull').textContent=c.full;
+ document.getElementById('dGrid').innerHTML=`
+  <div class="car-detail-stat"><div class="cds-icon">💰</div><div class="cds-label">Preço médio</div><div class="cds-val">${c.price}</div></div>
+  <div class="car-detail-stat"><div class="cds-icon">⛽</div><div class="cds-label">Consumo</div><div class="cds-val">${c.consume}</div></div>
+  <div class="car-detail-stat"><div class="cds-icon">🛡️</div><div class="cds-label">Seguro/mês</div><div class="cds-val">${c.insurance}</div></div>
+  <div class="car-detail-stat"><div class="cds-icon">🔧</div><div class="cds-label">Manutenção/ano</div><div class="cds-val">${c.maint}</div></div>`;
+ document.getElementById('dPC').innerHTML=`
+  <div class="pro-list"><h4>✔ Pontos Positivos</h4><ul>${c.pros.map(p=>`<li>${p}</li>`).join('')}</ul></div>
+  <div class="con-list"><h4>✘ Pontos de Atenção</h4><ul>${c.cons.map(p=>`<li>${p}</li>`).join('')}</ul></div>`;
+ box.classList.add('show');
+ setTimeout(()=>box.scrollIntoView({behavior:'smooth',block:'nearest'}),50);
+}
+
+// ═══ CART ═══════════════════════════════════════════
+let cartProd='g1';
+let bundleChecked=false;
+
+function openCart(prod){
+ cartProd=prod; bundleChecked=false;
+ document.getElementById('bundleBtn').classList.remove('checked');
+ if(prod==='g1'){
+  document.getElementById('cpIcon').textContent='📘';
+  document.getElementById('cpName').textContent='Guia CNH do Zero';
+  document.getElementById('cpDesc').textContent='9 capítulos · PDF completo';
+  document.getElementById('cpOld').textContent='De R$ 47';
+  document.getElementById('cpNew').textContent='R$ 27';
+  document.getElementById('cpNew').style.color='var(--yellow)';
+  document.getElementById('cartCta').style.background='var(--yellow)';
+  document.getElementById('cartCta').style.color='var(--black)';
+ } else {
+  document.getElementById('cpIcon').textContent='🚗';
+  document.getElementById('cpName').textContent='Guia 2 — CNH + Primeiro Carro';
+  document.getElementById('cpDesc').textContent='17 capítulos completos · PDF';
+  document.getElementById('cpOld').textContent='De R$ 147';
+  document.getElementById('cpNew').textContent='R$ 47';
+  document.getElementById('cpNew').style.color='var(--orange)';
+  document.getElementById('cartCta').style.background='var(--orange)';
+  document.getElementById('cartCta').style.color='var(--white)';
+ }
+ document.getElementById('upsellSection').style.display='block';
+ document.getElementById('cartCount').textContent='1';
+ updateTotal();
+ document.getElementById('cartOverlay').classList.add('open');
+ document.body.style.overflow='hidden';
+}
+function closeCart(){document.getElementById('cartOverlay').classList.remove('open');document.body.style.overflow='';}
+function overlayClick(e){if(e.target===document.getElementById('cartOverlay'))closeCart();}
+function toggleBundle(){
+ bundleChecked=!bundleChecked;
+ document.getElementById('bundleBtn').classList.toggle('checked',bundleChecked);
+ document.getElementById('cartCount').textContent=bundleChecked?'4':'1';
+ updateTotal();
+}
+function updateTotal(){
+ const base=cartProd==='g1'?27:47;
+ const bonusPrice=bundleChecked?20:0;
+ const total=base+bonusPrice;
+ // original value = product original + bonus original (R$63)
+ const origBase=cartProd==='g1'?47:147;
+ const origBonus=bundleChecked?63:0;
+ const saved=(origBase+origBonus)-total;
+ document.getElementById('cartTotal').textContent=`R$ ${total}`;
+ document.getElementById('cartSavings').textContent=`Você economiza R$ ${saved} hoje 🎉`;
+}
+
+// ═══ TABS ════════════════════════════════════════════
+function showTab(id,btn){
+ document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+ document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+ document.getElementById('tab-'+id).classList.add('active');
+ btn.classList.add('active');
+}
+
+// ═══ FAQ ═════════════════════════════════════════════
+document.querySelectorAll('.faq-q').forEach(q=>{
+ q.addEventListener('click',()=>{
+  const item=q.closest('.faq-item');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');
+ });
+});
+
+// ═══ REVEAL ══════════════════════════════════════════
+const obs=new IntersectionObserver(entries=>{
+ entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*70);obs.unobserve(e.target);}});
+},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// ═══ STICKY ══════════════════════════════════════════
+window.addEventListener('scroll',()=>document.getElementById('stickyBar').classList.toggle('show',scrollY>500));
+
+// ═══ INIT ════════════════════════════════════════════
+renderPills(); renderCars();
+</script>
+</body>
+</html>
